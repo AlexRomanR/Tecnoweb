@@ -32,23 +32,6 @@ class EmpleadoSeeder extends Seeder
             'password' => bcrypt('12345678'),
         ])->assignRole('Administrador');
 
-        $sueldo = Sueldo::create([
-            'sueldo_basico' => generarSueldoAleatorio(),
-            'dias_pagados' => 24,
-            'horas_diarias' => 8,
-        ]);
-
-        $empleado = Empleado::create([
-            'ruta_imagen_e' => null,
-            'ID_Cargo' => 1,
-            'ID_Departamento' => 2,
-            'fechanac' => '1990/07/01',
-            'genero' => 'Masculino',
-            'estadocivil' => 'Soltero',
-            'ID_Sueldo' => $sueldo->id,
-            'ID_Usuario' => $user->id,
-        ]);
-
         $user = User::create([
             'name' => 'Encargado',
             'email' => 'encargado@gmail.com',
@@ -59,23 +42,6 @@ class EmpleadoSeeder extends Seeder
             'Empleado' => true,
             'password' => bcrypt('12345678'),
         ])->assignRole('Encargado');
-
-        $sueldo = Sueldo::create([
-            'sueldo_basico' => generarSueldoAleatorio(),
-            'dias_pagados' => 24,
-            'horas_diarias' => 8,
-        ]);
-
-        $empleado = Empleado::create([
-            'ruta_imagen_e' => null,
-            'ID_Cargo' => 1,
-            'ID_Departamento' => 2,
-            'fechanac' => '1990/07/01',
-            'genero' => 'Masculino',
-            'estadocivil' => 'Soltero',
-            'ID_Sueldo' => $sueldo->id,
-            'ID_Usuario' => $user->id,
-        ]);
 
         $user = User::create([
             'name' => 'Daniel',
@@ -88,23 +54,6 @@ class EmpleadoSeeder extends Seeder
             'password' => bcrypt('12345678'),
         ])->assignRole('Empleado');
 
-        $sueldo = Sueldo::create([
-            'sueldo_basico' => generarSueldoAleatorio(),
-            'dias_pagados' => 24,
-            'horas_diarias' => 8,
-        ]);
-
-        $empleado = Empleado::create([
-            'ruta_imagen_e' => null,
-            'ID_Cargo' => 4,
-            'ID_Departamento' => 2,
-            'fechanac' => '1990/07/01',
-            'genero' => 'Masculino',
-            'estadocivil' => 'Soltero',
-            'ID_Sueldo' => $sueldo->id,
-            'ID_Usuario' => $user->id,
-        ]);
-
         $user = User::create([
             'name' => 'Fernando',
             'email' => 'empleado3@gmail.com',
@@ -115,21 +64,5 @@ class EmpleadoSeeder extends Seeder
             'Empleado' => true,
             'password' => bcrypt('12345678'),
         ])->assignRole('Empleado');
-
-        $sueldo = Sueldo::create([
-            'sueldo_basico' => generarSueldoAleatorio(),
-            'dias_pagados' => 24,
-            'horas_diarias' => 8,
-        ]);
-
-        $empleado = Empleado::create([
-            'ID_Cargo' => 1,
-            'ID_Departamento' => 1,
-            'fechanac' => '1990/07/01',
-            'genero' => 'Masculino',
-            'estadocivil' => 'Soltero',
-            'ID_Sueldo' => $sueldo->id,
-            'ID_Usuario' => $user->id,
-        ]);
     }
 }

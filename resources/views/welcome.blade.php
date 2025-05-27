@@ -21,7 +21,7 @@
                             </div>
                         @else
                             <div class="flex justify-center md:justify-start">
-                                <a href="{{route('puestos')}}" class="text-sm md:text-base text-gray-800 hover:text-purple-300 py-2 px-2 sm:py-3 sm:px-3 md:px-4 lg:px-6">Puestos Disponibles</a>
+                                {{-- <a href="{{route('puestos')}}" class="text-sm md:text-base text-gray-800 hover:text-purple-300 py-2 px-2 sm:py-3 sm:px-3 md:px-4 lg:px-6">Puestos Disponibles</a>
                                 <a href="#" class="text-sm md:text-base text-gray-800 hover:text-purple-300 py-2 px-2 sm:py-3 sm:px-3 md:px-4 lg:px-6">Información de la empresa</a>
                                 {{-- <a href="#" class="text-sm md:text-base text-gray-800 hover:text-purple-300 py-2 px-2 sm:py-3 sm:px-3 md:px-4 lg:px-6">Contact</a>
                                 <a href="#" class="text-sm md:text-base text-gray-800 hover:text-purple-300 py-2 px-2 sm:py-3 sm:px-3 md:px-4 lg:px-6">FAQ</a> --}}
